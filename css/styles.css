@@ -28,6 +28,29 @@
     font-style: normal;
 }
 
+/* === Base smooth scrolling + layout helpers === */
+:root {
+  --nav-h: 72px; /* adjust to match your actual navbar height */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: var(--nav-h); /* prevents content hiding under fixed navbar */
+}
+
+section {
+  scroll-margin-top: var(--nav-h);
+  min-height: 100vh;
+}
+
+/* Optional: active nav link style */
+.nav__link.is-active {
+  font-weight: 800;
+}
+
 body {
     margin: 0;
     font-family: 'Manrope', sans-serif;
@@ -113,6 +136,33 @@ body {
   }
   
   .about-grid p {
+    font-size: 1.1rem;
+    line-height: 1.0;
+    color: #111;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 900px;
+    margin-left: 4vw;
+    margin-right: auto;
+    margin-top: 7rem;
+    padding: 0 1rem;
+    gap: 2rem 1.5rem;
+    font-family: 'Satoshi', sans-serif;
+  }
+
+  .projects-grid h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+  }
+
+  .projects-grid p {
     font-size: 1.1rem;
     line-height: 1.0;
     color: #111;

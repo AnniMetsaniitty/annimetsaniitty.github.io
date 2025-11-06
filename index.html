@@ -3,23 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Anni Metsäniitty – Portfolio</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+  <!--  Navbar -->
   <nav class="navbar">
       <div class="nav-left">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About Me</a>
+        <a class="nav__link" href="#about">About Me</a>
+        <a class="nav__link" href="#projects">Projects</a>
       </div>
       <div class="nav-logo">
-        <a href="/index.html">Anni Metsäniitty</a>
+        <a class="nav__link" href="#home">Anni Metsäniitty</a>
       </div>
       <div class="nav-right">
-        <a href="/projects.html">Projects</a>
-        <a href="/skills.html">Skills</a>
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#contact">Contact</a>
       </div>
     </nav>
+
+    <main>
+      <section id="home">
+      <!-- content from your current index hero/intro -->
+      </section>
+
+      <section id="about">
+        <!-- move content from about.html here -->
+        <main class="about-grid">
+          <div class="about-left">
+            <h2>Introduction</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+          </div>
+          <div class="about-right">
+            <h2>My Dev Journey</h2>
+            <p>Started with curiosity, driven by creativity. I've explored everything from basic HTML to modern frameworks like React.</p>
+            <p>I value clean code, accessibility, and crafting thoughtful interfaces.</p>
+          </div>
+        </main>
+      </section>
+
+      <section id="projects">
+        <!-- move content from projects.html here -->
+        <main class="projects-grid">
+          <div class="project-item">
+            <h2>Project One</h3>
+            <p>Description of project one.</p>
+          </div>
+          <div class="project-item">
+            <h2>Project Two</h3>
+            <p>Description of project two.</p>
+          </div>
+          <div class="project-item">
+            <h2>Project Three</h3>
+            <p>Description of project three.</p>
+          </div>
+          <div class="project-item">
+            <h2>Project Four</h3>
+            <p>Description of project four.</p>
+          </div>
+          <!-- Add more projects as needed -->
+        </main>
+      </section>
+
+      <section id="skills">
+        <!-- move content from skills.html here -->
+      </section>
+
+      <section id="contact">
+        <!-- optional contact/footer section -->
+      </section>
+    </main>
+
+    <script src="js/main.js" defer></script>
+    <script>
+      /* Optional: highlight the active nav link as you scroll */
+      const sections = [...document.querySelectorAll("main section[id]")];
+      const links = new Map(
+        [...document.querySelectorAll(".nav__link")]
+          .map(a => [a.getAttribute("href").replace('#',''), a])
+      );
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            links.forEach(l => l.classList.remove("is-active"));
+            const a = links.get(entry.target.id);
+            if (a) a.classList.add("is-active");
+            history.replaceState(null, "", `#${entry.target.id}`);
+          }
+        });
+      }, { rootMargin: `-${getComputedStyle(document.documentElement).getPropertyValue('--nav-h')} 0px -60% 0px`, threshold: 0.1 });
+
+      sections.forEach(s => io.observe(s));
+
+      /* Smooth scroll fallback (optional, improves Safari behavior) */
+      document.querySelectorAll('.nav__link[href^="#"]').forEach(a => {
+        a.addEventListener('click', (e) => {
+          const id = a.getAttribute('href').slice(1);
+          const target = document.getElementById(id);
+          if (!target) return;
+          e.preventDefault();
+          const y = target.getBoundingClientRect().top + window.scrollY - parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'));
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        });
+      });
+    </script>
 
 </body>
 </html>

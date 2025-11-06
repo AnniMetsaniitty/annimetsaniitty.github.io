@@ -20,7 +20,7 @@
         <a class="nav__link" href="#skills">Skills</a>
         <a class="nav__link" href="#contact">Contact</a>
       </div>
-    </nav>
+  </nav>
 
     <main>
       <section id="home">
@@ -87,40 +87,10 @@
       </section>
     </main>
 
-    <script src="js/main.js" defer></script>
-    <script>
-      /* Optional: highlight the active nav link as you scroll */
-      const sections = [...document.querySelectorAll("main section[id]")];
-      const links = new Map(
-        [...document.querySelectorAll(".nav__link")]
-          .map(a => [a.getAttribute("href").replace('#',''), a])
-      );
+  <!-- Back to Top Button -->
+  <button id="backToTop" aria-label="Back to top">↑</button>
 
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            links.forEach(l => l.classList.remove("is-active"));
-            const a = links.get(entry.target.id);
-            if (a) a.classList.add("is-active");
-            history.replaceState(null, "", `#${entry.target.id}`);
-          }
-        });
-      }, { rootMargin: `-${getComputedStyle(document.documentElement).getPropertyValue('--nav-h')} 0px -60% 0px`, threshold: 0.1 });
-
-      sections.forEach(s => io.observe(s));
-
-      /* Smooth scroll fallback (optional, improves Safari behavior) */
-      document.querySelectorAll('.nav__link[href^="#"]').forEach(a => {
-        a.addEventListener('click', (e) => {
-          const id = a.getAttribute('href').slice(1);
-          const target = document.getElementById(id);
-          if (!target) return;
-          e.preventDefault();
-          const y = target.getBoundingClientRect().top + window.scrollY - parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'));
-          window.scrollTo({ top: y, behavior: 'smooth' });
-        });
-      });
-    </script>
-
+  <script src="js/main.js" defer></script>
+    
 </body>
 </html>

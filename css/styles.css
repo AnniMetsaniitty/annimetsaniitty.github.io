@@ -161,6 +161,18 @@ body {
     font-family: 'Satoshi', sans-serif;
   }
 
+  .projects-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .projects-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
   .projects-grid h2 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -175,6 +187,36 @@ body {
     line-height: 1.0;
     color: #111;
   }
+
+  /* === Back to Top Button === */
+  #backToTop {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+  }
+
+  #backToTop:hover {
+    background-color: rgb(254, 45, 45);
+    transform: scale(1.1);
+  }
+
+  #backToTop.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
   
   /* Responsive stacking */
   @media (max-width: 768px) {

@@ -97,6 +97,19 @@ body {
     color: transparent;
   }
 
+  .section-header {
+    max-width: 900px;
+    margin-left: 4vw;
+    margin-right: auto;
+    margin-top: 4rem;
+    padding: 0 1rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
   .about-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;

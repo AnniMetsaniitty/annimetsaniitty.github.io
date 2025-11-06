@@ -46,11 +46,6 @@ section {
   min-height: 100vh;
 }
 
-/* Optional: active nav link style */
-.nav__link.is-active {
-  font-weight: 800;
-}
-
 body {
     margin: 0;
     font-family: 'Manrope', sans-serif;

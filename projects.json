@@ -1,0 +1,37 @@
+[
+{
+"title": "Password Manager",
+"summary": "A secure Python CLI app for generating and managing encrypted passwords.",
+"cover": "assets/images/projects/password-manager.png",
+"links": {
+"demo": "https://annimetsaniitty.github.io/",
+"source": "https://github.com/AnniMetsaniitty/py-password-manager"
+},
+"tags": ["Python", "JSON"],
+"year": 2025,
+"featured": true
+},
+{
+"title": "Task Manager",
+"summary": "A simple Flask web app for creating, tracking, and managing tasks with local JSON storage.",
+"cover": "assets/images/projects/task-manager.png",
+"links": {
+"demo": "https://annimetsaniitty.github.io/weather/",
+"source": "https://github.com/AnniMetsaniitty/py-task-manager"
+},
+"tags": ["Python", "Flask", "HTML", "CSS", "JSON"],
+"year": 2025,
+"featured": true
+},
+{
+"title": "Shared Calendar App",
+"summary": "A React app for managing shared events with interactive views, multiple users, and localStorage persistence.",
+"cover": "assets/images/projects/shared-calendar.png",
+"links": {
+"source": "https://github.com/AnniMetsaniitty/shared-calendar-app"
+},
+"tags": ["React", "Vite", "JavaScript"],
+"year": 2025,
+"featured": false
+}
+]

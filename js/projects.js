@@ -85,4 +85,18 @@ const text = `${p.title} ${p.summary} ${(p.tags||[]).join(" ")}`.toLowerCase();
 const qOk = q ? text.includes(q) : true;
 const tOk = tags.size ? (p.tags||[]).some(t => tags.has(t)) : true;
 return qOk && tOk;
+});
+// featured first, then year desc, then title
+out.sort((a,b) => (b.featured===true)-(a.featured===true) || (b.year||0)-(a.year||0) || a.title.localeCompare(b.title));
+state.filtered = out;
+render(out);
+}
+
+
+function wireSearch() {
+if (!els.search) return;
+els.search.addEventListener("input", (e) => { state.q = e.target.value || ""; applyFilters(); });
+}
+
+
 })();

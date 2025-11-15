@@ -149,45 +149,6 @@ body {
     color: #111;
   }
 
- .projects-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    max-width: 900px;
-    margin-left: 4vw;
-    margin-right: auto;
-    margin-top: 7rem;
-    padding: 0 1rem;
-    gap: 2rem 1.5rem;
-    font-family: 'Satoshi', sans-serif;
-  }
-
-  .projects-left {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .projects-right {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .projects-grid h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    letter-spacing: 1px;
-    padding-top: 1rem;
-    margin: 0 0 0.5rem 0;
-    text-transform: uppercase;
-  }
-
-  .projects-grid p {
-    font-size: 1.1rem;
-    line-height: 1.0;
-    color: #111;
-  }
-*/
   /* === Back to Top Button === */
   #backToTop {
     position: fixed;

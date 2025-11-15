@@ -33,5 +33,27 @@
 "tags": ["React", "Vite", "JavaScript"],
 "year": 2025,
 "featured": false
+},
+{
+"title": "Shared Calendar App",
+"summary": "A React app for managing shared events with interactive views, multiple users, and localStorage persistence.",
+"cover": "assets/images/projects/shared-calendar.png",
+"links": {
+"source": "https://github.com/AnniMetsaniitty/shared-calendar-app"
+},
+"tags": ["React", "Vite", "JavaScript"],
+"year": 2025,
+"featured": false
+},
+{
+"title": "Shared Calendar App",
+"summary": "A React app for managing shared events with interactive views, multiple users, and localStorage persistence.",
+"cover": "assets/images/projects/shared-calendar.png",
+"links": {
+"source": "https://github.com/AnniMetsaniitty/shared-calendar-app"
+},
+"tags": ["React", "Vite", "JavaScript"],
+"year": 2025,
+"featured": false
 }
 ]

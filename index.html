@@ -50,29 +50,49 @@
       <div class="section-header">
         Projects
       </div>
-      <div class="projects-grid">
-        <div class="project-item">
-          <h2>Project One</h3>
-          <p>Description of project one.
+
+      <div class="projects-wrapper">
+        <!-- Intro -->
+        <div class="projects-intro">
+          <p>
+            A curated selection of things I’ve been building lately —
+            from small experiments to more polished applications.
           </p>
         </div>
-        <div class="project-item">
-          <h2>Project Two</h3>
-          <p>Description of project two.
-          </p>
+
+        <!-- Toolbar: search + tags + count -->
+        <div class="projects-toolbar">
+          <div class="projects-search">
+            <label for="projects-search" class="visually-hidden">Search projects</label>
+            <input
+              id="projects-search"
+              type="search"
+              placeholder="Search by name, tech, or description…"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="projects-meta">
+            <span class="projects-count-label">
+              <span id="projects-count">0</span> projects
+            </span>
+          </div>
         </div>
-        <div class="project-item">
-          <h2>Project Three</h3>
-          <p>Description of project three.
+
+        <!-- Tag chips -->
+        <div id="projects-chips" class="projects-chips" aria-label="Filter by tag"></div>
+
+        <!-- Dynamic grid injected by projects.js -->
+        <div id="projects-grid" class="projects-grid"></div>
+
+        <noscript>
+          <p class="projects-noscript">
+            Enable JavaScript to see my projects.
           </p>
-        </div>
-        <div class="project-item">
-          <h2>Project Four</h3>
-          <p>Description of project four.
-          </p>
-        </div>
+        </noscript>
       </div>
     </section>
+
 
     <section id="skills">
       <div class="section-header">
@@ -90,6 +110,7 @@
   <!-- Back to Top Button -->
   <button id="backToTop" aria-label="Back to top">↑</button>
 
+  <script src="js/projects.js" defer></script>
   <script src="js/main.js" defer></script>
     
 </body>

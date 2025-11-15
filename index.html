@@ -8,27 +8,31 @@
     <link rel="stylesheet" href="/css/projects.css">
 </head>
 <body>
-  <!--  Navbar -->
-  <nav class="navbar">
-      <div class="nav-left">
-        <a class="nav__link" href="#about">About Me</a>
-        <a class="nav__link" href="#projects">Projects</a>
-      </div>
-      <div class="nav-logo">
-        <a class="nav__link" href="#home">Anni Metsäniitty</a>
-      </div>
-      <div class="nav-right">
-        <a class="nav__link" href="#skills">Skills</a>
-        <a class="nav__link" href="#contact">Contact</a>
-      </div>
-  </nav>
+<!--  Navbar -->
+<nav class="navbar">
+    <div class="nav-left">
+      <a class="nav__link" href="#about">About Me</a>
+      <a class="nav__link" href="#projects">Projects</a>
+    </div>
+    <div class="nav-logo">
+      <a class="nav__link" href="#home">Anni Metsäniitty</a>
+    </div>
+    <div class="nav-right">
+      <a class="nav__link" href="#skills">Skills</a>
+      <a class="nav__link" href="#contact">Contact</a>
+    </div>
+</nav>
 
-  <main>
-    <section id="home">
-    <!-- content from your current index hero/intro -->
-    </section>
+<main>
+  <section id="home">
+    <div class="container">
+      <!-- your hero / intro content goes here -->
+      <!-- e.g. headline, subheadline, call-to-action -->
+    </div>
+  </section>
 
-    <section id="about">
+  <section id="about">
+    <div class="container">
       <div class="section-header">
         About Me
       </div>
@@ -44,9 +48,11 @@
           <p>I value clean code, accessibility, and crafting thoughtful interfaces.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects">
+  <section id="projects">
+    <div class="container">
       <div class="section-header">
         Projects
       </div>
@@ -67,7 +73,7 @@
             <input
               id="projects-search"
               type="search"
-              placeholder="Search by name, tech, or description…"
+              placeholder="Search by name, tech, or desc"
               autocomplete="off"
             />
           </div>
@@ -91,27 +97,34 @@
           </p>
         </noscript>
       </div>
-    </section>
+    </div>
+  </section>
 
-
-    <section id="skills">
+  <section id="skills">
+    <div class="container">
       <div class="section-header">
         Skills
       </div>
-    </section>
+      <!-- skills content will go here -->
+    </div>
+  </section>
 
-    <section id="contact">
+  <section id="contact">
+    <div class="container">
       <div class="section-header">
         Contact
       </div>
-    </section>
-  </main>
+      <!-- contact content / form will go here -->
+    </div>
+  </section>
+</main>
 
-  <!-- Back to Top Button -->
-  <button id="backToTop" aria-label="Back to top">↑</button>
 
-  <script src="js/projects.js" defer></script>
-  <script src="js/main.js" defer></script>
+<!-- Back to Top Button -->
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="js/projects.js" defer></script>
+<script src="js/main.js" defer></script>
     
 </body>
 </html>

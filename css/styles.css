@@ -33,6 +33,12 @@
   --nav-h: 72px; /* adjust to match your actual navbar height */
 }
 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -99,10 +105,8 @@ body {
 
   .section-header {
     max-width: 900px;
-    margin-left: 4vw;
-    margin-right: auto;
-    margin-top: 4rem;
-    padding: 0 1rem;
+    margin: 4rem 0 0 0;
+    padding: 0;
     font-family: 'Manrope', sans-serif;
     font-size: 2.5rem;
     font-weight: 400;
@@ -113,21 +117,12 @@ body {
   .about-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    max-width: 900px;
-    margin-left: 4vw;
-    margin-right: auto;
-    margin-top: 7rem;
-    padding: 0 1rem;
     gap: 2rem 1.5rem;
+    margin-top: 3rem;
     font-family: 'Satoshi', sans-serif;
   }
   
-  .about-left {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
+  .about-left,
   .about-right {
     display: flex;
     flex-direction: column;
@@ -145,7 +140,7 @@ body {
   
   .about-grid p {
     font-size: 1.1rem;
-    line-height: 1.0;
+    line-height: 1.4;
     color: #111;
   }
 
@@ -183,7 +178,7 @@ body {
   @media (max-width: 768px) {
     .about-grid {
       grid-template-columns: 1fr;
-      margin: 2rem auto;
+      margin: 2rem; /*or: 2 rem auto;*/
     }
   }
   

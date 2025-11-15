@@ -149,7 +149,7 @@ body {
     color: #111;
   }
 
-  .projects-grid {
+ .projects-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     max-width: 900px;
@@ -187,7 +187,7 @@ body {
     line-height: 1.0;
     color: #111;
   }
-
+*/
   /* === Back to Top Button === */
   #backToTop {
     position: fixed;

@@ -33,6 +33,16 @@
   --nav-h: 72px; /* adjust to match your actual navbar height */
 }
 
+/*:root Color Palette {
+  --color-1: #E7E5DF;
+  --color-2: #E5E7DF;
+  --color-3: #E1E7DF;
+  --color-4: #DFE1E7;
+  --color-5: #E5DFE7;
+
+  --color-text-primary: ##1E1E1E
+}*/
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -43,9 +53,10 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  padding-top: var(--nav-h); /* prevents content hiding under fixed navbar */
-}
+/*body {
+  padding-top: var(--nav-h); /* prevents content hiding under fixed navbar
+} */
+
 
 section {
   scroll-margin-top: var(--nav-h);
@@ -55,52 +66,63 @@ section {
 body {
     margin: 0;
     font-family: 'Manrope', sans-serif;
-    background: #FAF3DC;
+    background: #e5e7df;
   }
   
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.2rem 2rem;
+    padding: 2rem 1rem 2rem 1rem;
     text-transform: uppercase;
+    font-family: 'Satoshi', sans-serif;
     font-size: 0.9rem;
     letter-spacing: 1px;
-    background: #FAF3DC;
+    background: #e5e7df;
+    transition: box-shadow 0.2s ease, background-color 0.2s ease;
+    border-bottom: 1px solid #1E1E1E;
+
   }
   
   .nav-left,
   .nav-right {
     display: flex;
     gap: 2rem;
+    color: #1E1E1E
   }
   
   .nav-logo a {
     font-size: 0.9rem;
+    font-weight: 900;
     text-decoration: none;
-    color: #000;
+    color: #1E1E1E;
     transition: color 0.3s ease;
   }
 
   .nav-logo a:hover {
     color: rgb(254, 45, 45);
+    transition: opacity 0.3s ease;
   }  
   
   .navbar a {
     text-decoration: none;
-    color: #000;
+    color: #1E1E1E;
     transition: opacity 0.3s ease;
   }
   
   .nav-left a:hover,
   .nav-right a:hover {
-    background: linear-gradient(135deg, #FFCB70 0%, #C751C0 50%, #4158D0 100%);
+    /*background: linear-gradient(135deg, #FFCB70 0%, #C751C0 50%, #4158D0 100%);
     /* Option for background color: linear-gradient(135deg, rgb(254, 205, 165) 0%, 
     rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);*/
-    -webkit-background-clip: text;
+    /*-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    color: transparent;
+    color: transparent;*/
+    color: rgb(254, 45, 45);
+    text-decoration: underline rgb(254, 45, 45);
+    text-underline-offset: 8px;
+    transition: opacity 0.3s ease;
   }
 
   .section-header {

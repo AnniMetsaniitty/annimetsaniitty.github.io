@@ -76,7 +76,6 @@ body {
     padding: 2rem 1rem 2rem 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-bottom: 10rem;
     text-transform: uppercase;
     font-family: 'Satoshi', sans-serif;
     font-size: 0.9rem;
@@ -132,7 +131,6 @@ body {
     font-family: 'Manrope', sans-serif;
     font-size: 2.5rem;
     font-weight: 400;
-
     text-transform: uppercase;
   }
 
@@ -141,9 +139,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - var(--nav-h));
+  min-height: 40vh;
   text-align: center;
-  padding: 4rem 1.5rem;
+  padding: 2rem 1.5rem;
   background: #e5e7df;
 }
 

@@ -28,11 +28,19 @@
 
 <main>
   <section id="home">
+    <div class="decorative-flower flower-left">
+      <img src="/assets/svgs/flower-main.svg" alt="" role="presentation" />
+    </div>
+
+    <div class="decorative-flower flower-right">
+      <img src="/assets/svgs/flower-accent.svg" alt="" role="presentation" />
+    </div>
+
     <div class="home-wrapper">
       <p class="home-intro">Hi, I'm Anni.</p>
 
       <h1 class="home-title">
-        Software <br>
+        Frontend <br>
         Developer
       </h1>
 
@@ -43,33 +51,10 @@
     </div>
   </section>
 
-
-  <section id="about">
-    <div class="container">
-      <div class="section-header">
-        About Me
-      </div>
-      <div class="about-grid">
-        <div class="about-left">
-          <h2>Crafting elegant solutions with intention </h2>
-          <p>I transform complex visions into refined, intuitive 
-            digital experiences that users enjoy, administrators 
-            rely on, and investors trust. Clarity is my signature—I 
-            build with intention, precision, and purpose.</p>
-        </div>
-        <div class="about-right">
-          <h2>Skills</h2>
-          <p>Started with curiosity, driven by creativity. I've explored everything from basic HTML to modern frameworks like React.</p>
-          <p>I value clean code, accessibility, and crafting thoughtful interfaces.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="projects">
     <div class="container">
-      <div class="section-header">
-        What I've Built
+      <div class="projects-header">
+        My Creations
       </div>
 
       <div class="projects-wrapper">
@@ -115,12 +100,101 @@
     </div>
   </section>
 
-  <section id="skills">
+    <section id="skills">
     <div class="container">
       <div class="section-header">
-        Skills
+        Skills & Experience
       </div>
-      <!-- skills content will go here -->
+
+      <div class="skills-layout">
+        <!-- Left: short narrative -->
+        <div class="skills-intro">
+          <h2>"Ok, so what do you actually do?"</h2>
+          <p>
+            My main area of expertice is frontend development - client-side of the web.
+          </p>
+          <p>
+            Building desktop applications and tools with C# and .NET comfortably, use HTML, CSS, and JavaScript for building small, 
+            React for medium applications. Have experience with backend development using Python 
+            and Flask as well as database management with SQL.
+          </p>
+        </div>
+
+        <!-- Right: skill groups -->
+        <div class="skills-groups">
+          <div class="skill-group">
+            <h3>Dev</h3>
+            <p class="skill-note">Daily drivers I use most often.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Flask</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">HTML</span>
+              <span class="skill-pill">CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Frontend & UI</h3>
+            <p class="skill-note">For building responsive, interactive interfaces.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">React</span>
+              <span class="skill-pill">Vite</span>
+              <span class="skill-pill">DOM APIs</span>
+              <span class="skill-pill">Accessibility</span>
+              <span class="skill-pill">Responsive Layouts</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Data & Architecture</h3>
+            <p class="skill-note">Keeping things structured and predictable.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">JSON</span>
+              <span class="skill-pill">RESTful APIs</span>
+              <span class="skill-pill">State Management</span>
+              <span class="skill-pill">LocalStorage</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Workflow & Collaboration</h3>
+            <p class="skill-note">How I like to work with teams.</p>
+            <div class="skill-pills">
+              <span class="skill-pill">Git & GitHub</span>
+              <span class="skill-pill">Code Reviews</span>
+              <span class="skill-pill">Issue Tracking</span>
+              <span class="skill-pill">Documentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="skills-footnote">
+        A problem is a chance for you to do your best. – Duke Ellington
+      </p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        About Me
+      </div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2>Crafting elegant solutions with intention </h2>
+          <p>I transform complex visions into refined, intuitive 
+            digital experiences that users enjoy, administrators 
+            rely on, and investors trust. Clarity is my signature—I 
+            build with intention, precision, and purpose.</p>
+        </div>
+        <div class="about-right">
+          <h2>Skills</h2>
+          <p>Started with curiosity, driven by creativity. I've explored everything from basic HTML to modern frameworks like React.</p>
+          <p>I value clean code, accessibility, and crafting thoughtful interfaces.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -128,8 +202,60 @@
     <div class="container">
       <div class="section-header">
         Contact
+      </div>
+
+      <div class="contact-layout">
+        <!-- Left: copy -->
+        <div class="contact-intro">
+          <h2>Wanna chat?</h2>
+          <p>
+            If you got a project in mind or just want to chat, don't be shy -
+            Send me an email!
+          </p>
+        </div>
+
+        <!-- Right: contact card -->
+        <div class="contact-card" aria-label="Contact details">
+          <div class="contact-row">
+            <p class="contact-label">Email</p>
+            <a class="contact-email" href="mailto:anni.metsaniitty@outlook.com">
+              anni.metsaniitty@outlook.com
+            </a>
+          </div>
+
+          <div class="contact-row">
+            <p class="contact-label">GitHub</p>
+            <a
+              class="contact-link"
+              href="https://github.com/AnniMetsaniitty"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/AnniMetsaniitty
+            </a>
+          </div>
+
+          <div class="contact-actions">
+            <a
+              class="btn primary"
+              href="mailto:anni.metsaniitty@outlook.com?subject=Hello%20Anni"
+            >
+              Email Me
+            </a>
+            <a
+              class="btn"
+              href="https://github.com/AnniMetsaniitty"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View GitHub
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
 </main>
 
 <!-- Back to Top Button -->

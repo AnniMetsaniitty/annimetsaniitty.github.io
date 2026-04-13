@@ -167,6 +167,7 @@ section {
 #home {
   position: relative;
   z-index: 1;
+  overflow: hidden;
 
   display: flex;
   align-items: center;
@@ -183,6 +184,8 @@ section {
 .home-wrapper {
   max-width: 720px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 /* Decorative flower images */
@@ -190,7 +193,7 @@ section {
   position: absolute;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.9;
+  opacity: 0.62;
 }
 
 .decorative-flower img {
@@ -200,17 +203,17 @@ section {
 }
 
 .flower-left {
-  top: -80px;
-  left: -60px;
-  width: 320px;
-  transform: rotate(-12deg);
+  top: 50%;
+  left: min(-10rem, calc(50% - 860px));
+  width: clamp(520px, 44vw, 760px);
+  transform: translateY(-44%) rotate(-14deg);
 }
 
 .flower-right {
-  top: -60px;
-  right: -50px;
-  width: 280px;
-  transform: rotate(18deg) scaleX(-1);
+  top: 50%;
+  right: min(-9rem, calc(50% - 840px));
+  width: clamp(500px, 42vw, 720px);
+  transform: translateY(-28%) rotate(18deg) scaleX(-1);
 }
 
 /* Small intro ("Hi, I'm Anni.") */
@@ -489,8 +492,18 @@ section {
   /* Decorative flowers scale down */
   .flower-left,
   .flower-right {
-    width: 160px;
-    top: -40px;
+    top: 50%;
+    width: clamp(260px, 44vw, 360px);
+  }
+
+  .flower-left {
+    left: -5rem;
+    transform: translateY(-50%) rotate(-11deg);
+  }
+
+  .flower-right {
+    right: -4.5rem;
+    transform: translateY(-34%) rotate(16deg) scaleX(-1);
   }
 
   /* Hero text sizing */
@@ -506,6 +519,24 @@ section {
   .about-grid {
     grid-template-columns: 1fr;
     margin: 2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .flower-left,
+  .flower-right {
+    width: clamp(220px, 52vw, 280px);
+    opacity: 0.56;
+  }
+
+  .flower-left {
+    left: -4.75rem;
+    transform: translateY(-54%) rotate(-9deg);
+  }
+
+  .flower-right {
+    right: -4.25rem;
+    transform: translateY(-32%) rotate(14deg) scaleX(-1);
   }
 }
 

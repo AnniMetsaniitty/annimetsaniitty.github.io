@@ -3,20 +3,42 @@
   "intro": {
     "heading": "What I bring to the table",
     "paragraphs": [
-      "My main area of expertice is frontend development - client-side of the web.",
-      "Building desktop applications and tools with C# and .NET comfortably, use HTML, CSS, and JavaScript for building small, React for medium applications. Have experience with backend development using Python and Flask as well as database management with SQL."
+      "Through my studies and personal projects, I have built a solid foundation in software development across multiple technologies",
+      "I enjoy working on both frontend and full-stack development, combining logical problem-solving with creating clear and user-friendly interfaces.",
+      "One of my key strengths is my ability to leverage AI tools effectively in development. I actively use various agentic systems to support coding, debugging, and learning new concepts. I also take a structured approach by defining project states, risks, and constraints to guide AI usage."
+      
     ]
   },
   "groups": [
     {
       "title": "Frontend Development",
-      "note": "Build responsive websites and applications with HTML, CSS, and JavaScript. Use React for medium-to-large scale applications with component-based architecture and modern state management.",
-      "pills": ["JavaScript", "HTML", "CSS"]
+      "note": "Build responsive and user-friendly websites.",
+      "pills": ["JavaScript", "HTML", "CSS", "React"]
     },
     {
       "title": "Backend & Desktop",
-      "note": "Develop desktop applications and tools comfortably using C# and .NET. Experience with backend development using Python and Flask, as well as database management with SQL.",
-      "pills": ["#C", ".NET", "Python", "SQL"]
+      "note": "Develop applications and handle core logic behind the scenes.",
+      "pills": ["C#", ".NET", "Java", "Python"]
+    },
+    {
+      "title": "Data & Databases",
+      "note": "Work with data, storage, and basic analysis.",
+      "pills": ["SQL", "Data Analysis", "Data Handling"]
+    },
+    {
+      "title": "Software Design",
+      "note": "Plan and structure applications with usability in mind.",
+      "pills": ["Application Architecture", "Problem Solving", "Usability", "System Thinking"]
+    },
+    {
+      "title": "Tools & Workflow",
+      "note": "Use tools to build, manage, and document projects.",
+      "pills": ["Git", "GitHub", "Documentation", "Debugging"]
+    },
+    {
+      "title": "AI-Assisted Development",
+      "note": "Use AI tools to support coding and learning.",
+      "pills": ["AI Tools", "Prompting", "Debugging Support", "Learning Acceleration"]
     }
   ]
 }

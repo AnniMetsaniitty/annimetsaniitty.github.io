@@ -1,8 +1,22 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initPageChrome() {
+  if (initPageChrome.initialized) {
+    return;
+  }
+
   const sections = [...document.querySelectorAll("main section[id]")];
   const links = new Map(
-    [...document.querySelectorAll(".nav__link")].map(a => [a.getAttribute("href").replace('#',''), a])
+    [...document.querySelectorAll('.nav__link[href^="#"]')].map((a) => [
+      a.getAttribute("href").replace("#", ""),
+      a,
+    ])
   );
+  const backToTopBtn = document.getElementById("backToTop");
+
+  if (!links.size || !backToTopBtn) {
+    return;
+  }
+
+  initPageChrome.initialized = true;
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -31,9 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo({ top: y, behavior: 'smooth' });
     });
   });
-
-  /* === Back to Top Button === */
-  const backToTopBtn = document.getElementById("backToTop");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 400) {
       backToTopBtn.classList.add("visible");
@@ -45,4 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   backToTopBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-});
+}
+
+document.addEventListener("DOMContentLoaded", initPageChrome, { once: true });
+document.addEventListener("content:ready", initPageChrome);

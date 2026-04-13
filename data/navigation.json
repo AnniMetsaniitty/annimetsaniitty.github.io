@@ -1,0 +1,14 @@
+{
+  "left": [
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Skills", "href": "#skills" }
+  ],
+  "logo": {
+    "label": "Anni Metsäniitty®",
+    "href": "#home"
+  },
+  "right": [
+    { "label": "Profile", "href": "#about" },
+    { "label": "Contact", "href": "#contact" }
+  ]
+}

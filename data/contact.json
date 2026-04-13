@@ -1,0 +1,37 @@
+{
+  "header": "Contact",
+  "intro": {
+    "heading": "Wanna chat?",
+    "paragraphs": [
+      "Please feel free to reach out to with any questions, opportunities, or just to say hi!"
+    ]
+  },
+  "details": [
+    {
+      "label": "Email",
+      "value": "anni.metsaniitty@outlook.com",
+      "href": "mailto:anni.metsaniitty@outlook.com",
+      "className": "contact-email"
+    },
+    {
+      "label": "GitHub",
+      "value": "github.com/AnniMetsaniitty",
+      "href": "https://github.com/AnniMetsaniitty",
+      "className": "contact-link",
+      "external": true
+    }
+  ],
+  "actions": [
+    {
+      "label": "Email Me",
+      "href": "mailto:anni.metsaniitty@outlook.com?subject=Hello%20Anni",
+      "className": "btn primary"
+    },
+    {
+      "label": "View GitHub",
+      "href": "https://github.com/AnniMetsaniitty",
+      "className": "btn",
+      "external": true
+    }
+  ]
+}

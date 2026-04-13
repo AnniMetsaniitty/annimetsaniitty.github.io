@@ -1,0 +1,22 @@
+{
+  "header": "Skills",
+  "intro": {
+    "heading": "What I bring to the table",
+    "paragraphs": [
+      "My main area of expertice is frontend development - client-side of the web.",
+      "Building desktop applications and tools with C# and .NET comfortably, use HTML, CSS, and JavaScript for building small, React for medium applications. Have experience with backend development using Python and Flask as well as database management with SQL."
+    ]
+  },
+  "groups": [
+    {
+      "title": "Frontend Development",
+      "note": "Build responsive websites and applications with HTML, CSS, and JavaScript. Use React for medium-to-large scale applications with component-based architecture and modern state management.",
+      "pills": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+      "title": "Backend & Desktop",
+      "note": "Develop desktop applications and tools comfortably using C# and .NET. Experience with backend development using Python and Flask, as well as database management with SQL.",
+      "pills": ["#C", ".NET", "Python", "SQL"]
+    }
+  ]
+}

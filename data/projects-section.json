@@ -1,0 +1,12 @@
+{
+  "header": "Projects",
+  "intro": [
+    "A selection of things I've built for learning, fun, and real-world use."
+  ],
+  "searchLabel": "Search projects",
+  "searchPlaceholder": "Search by name, tech, or desc",
+  "countLabel": {
+    "singular": "project",
+    "plural": "projects"
+  }
+}

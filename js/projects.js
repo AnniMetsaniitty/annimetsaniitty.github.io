@@ -7,6 +7,7 @@
     search: document.getElementById("projects-search"),
     chips: document.getElementById("projects-chips"),
     count: document.getElementById("projects-count"),
+    countText: document.getElementById("projects-count-text"),
   };
 
   // Helpers
@@ -72,6 +73,12 @@
 
     if (els.count) {
       els.count.textContent = `${list.length}`;
+    }
+
+    if (els.countText) {
+      const singular = els.countText.dataset.singular || "project";
+      const plural = els.countText.dataset.plural || "projects";
+      els.countText.textContent = list.length === 1 ? singular : plural;
     }
   }
 

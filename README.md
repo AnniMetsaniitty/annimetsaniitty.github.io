@@ -1,16 +1,19 @@
 # Anni Metsäniitty Portfolio
 
-## Description
-This repository contains a static portfolio website for Anni Metsäniitty. It presents profile information, skills, selected projects, and contact details in a single-page layout.
+## Live Demo
+[View Live Site](https://annimetsaniitty.github.io)
 
-The site is built without a framework and uses JSON files to keep page content separate from the HTML structure, making updates easier to manage in a static hosting setup.
+## Description
+This repository contains a static portfolio website for Anni Metsäniitty, created to showcase front-end development skills and selected projects.
+
+The site uses JSON files to separate content from structure, making updates easier in a static hosting environment.
 
 ## Features
 - Single-page portfolio with Home, Projects, Skills, Profile, and Contact sections
 - Sticky navigation with smooth scrolling and active section highlighting
 - Project cards loaded from JSON data
 - Project search and tag filtering
-- Static section content loaded dynamically from JSON files
+- Section content dynamically loaded from JSON files
 - Responsive layout with local assets and custom fonts
 
 ## Tech Stack
@@ -19,37 +22,21 @@ The site is built without a framework and uses JSON files to keep page content s
 - Vanilla JavaScript
 - JSON
 
-## Installation
-1. Clone the repository:
+## Local Development
 
-```bash
-git clone https://github.com/AnniMetsaniitty/annimetsaniitty.github.io.git
-```
+To run the project locally:
+
+1. Clone the repository:
+   git clone https://github.com/AnniMetsaniitty/annimetsaniitty.github.io.git
 
 2. Move into the project directory:
+   cd annimetsaniitty.github.io
 
-```bash
-cd annimetsaniitty.github.io
-```
+3. Start a local server (required for JSON fetching):
+   python3 -m http.server 8000
 
-3. Start a local static server from the repository root.
-
-Using Python:
-
-```bash
-python3 -m http.server 8000
-```
-
-## Usage
-Open the site in a browser after starting the local server:
-
-```text
-http://localhost:8000
-```
-
-Content can be updated without changing the main HTML layout:
-- Edit files in `data/` to update section content such as navigation, hero text, skills, profile, and contact details.
-- Edit `projects.json` to add or update project cards shown in the Projects section.
+4. Open in browser:
+   http://localhost:8000
 
 ## Project Structure
 ```text

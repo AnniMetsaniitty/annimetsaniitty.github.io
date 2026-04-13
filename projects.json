@@ -1,31 +1,18 @@
 [
 {
-"title": "Password Manager",
-"summary": "A secure Python CLI app for generating and managing encrypted passwords.",
-"cover": "assets/images/projects/password-manager.png",
-"links": {
-"demo": "https://annimetsaniitty.github.io/",
-"source": "https://github.com/AnniMetsaniitty/py-password-manager"
-},
-"tags": ["Python", "JSON"],
-"year": 2025,
-"featured": true
-},
-{
-"title": "Task Manager",
-"summary": "A simple Flask web app for creating, tracking, and managing tasks with local JSON storage.",
+"title": "Cycle Tracker",
+"summary": "A full-stack Java application with a Spring Boot REST API and JavaFX client for tracking menstrual cycles and medication schedules, created using an agent-assisted development workflow (Codex).",
 "cover": "assets/images/projects/task-manager.png",
 "links": {
-"demo": "https://annimetsaniitty.github.io/weather/",
-"source": "https://github.com/AnniMetsaniitty/py-task-manager"
+"source": "https://github.com/AnniMetsaniitty/cycle-tracker"
 },
-"tags": ["Python", "Flask", "HTML", "CSS", "JSON"],
+"tags": ["Java", "Spring Boot", "JPA", "PostgreSQL", "JavaFX"],
 "year": 2025,
 "featured": true
 },
 {
 "title": "Shared Calendar App",
-"summary": "A React app for managing shared events with interactive views, multiple users, and localStorage persistence.",
+"summary": "A React shared calendar app for managing day-based events with a monthly view, simulated multiple users, andlocalStorage persistence.",
 "cover": "assets/images/projects/shared-calendar.png",
 "links": {
 "source": "https://github.com/AnniMetsaniitty/shared-calendar-app"
@@ -33,5 +20,17 @@
 "tags": ["React", "Vite", "JavaScript"],
 "year": 2025,
 "featured": false
+},
+{
+"title": "Password Manager",
+"summary": "A secure Python CLI app for generating and managing encrypted passwords.",
+"cover": "assets/images/projects/password-manager.png",
+"links": {
+"demo": "https://github.com/AnniMetsaniitty/py-password-manager",
+"source": "https://github.com/AnniMetsaniitty/py-password-manager"
+},
+"tags": ["Python", "JSON"],
+"year": 2025,
+"featured": true
 }
 ]

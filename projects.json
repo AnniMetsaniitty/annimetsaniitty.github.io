@@ -26,7 +26,6 @@
 "summary": "A secure Python CLI app for generating and managing encrypted passwords.",
 "cover": "assets/images/projects/password-manager.png",
 "links": {
-"demo": "https://github.com/AnniMetsaniitty/py-password-manager",
 "source": "https://github.com/AnniMetsaniitty/py-password-manager"
 },
 "tags": ["Python", "JSON"],

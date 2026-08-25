@@ -1,59 +1,36 @@
-# Anni Metsäniitty Portfolio
+# Anni Metsäniitty — Personal Portfolio
 
-## Live Demo
-[View Live Site](https://annimetsaniitty.github.io)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-annimetsaniitty.github.io-2ea44f?style=for-the-badge&logo=github)](https://annimetsaniitty.github.io/#home)
+[![Tech Stack](https://img.shields.io/badge/Vanilla_JS_•_HTML5_•_CSS3-informational?style=for-the-badge)](#tech-stack)
 
-## Description
-This repository contains a static portfolio website for Anni Metsäniitty, created to showcase front-end development skills and selected projects.
+A lightweight, responsive personal portfolio built with modern vanilla web technologies to showcase my projects, technical skill set, and background.
 
-The site uses JSON files to separate content from structure, making updates easier in a static hosting environment.
+---
 
-## Features
-- Single-page portfolio with Home, Projects, Skills, Profile, and Contact sections
-- Sticky navigation with smooth scrolling and active section highlighting
-- Project cards loaded from JSON data
-- Project search and tag filtering
-- Section content dynamically loaded from JSON files
-- Responsive layout with local assets and custom fonts
+## Key Highlights
+
+- **Dynamic Content Architecture:** Decoupled data model using static JSON feeds to dynamically render project cards, skill lists, and section content without framework overhead.
+- **Client-Side Filtering & Search:** Real-time search and multi-tag filtering for featured projects.
+- **Smooth Navigation:** Sticky navigation bar with scroll-spy dynamic active states and accessible anchor links.
+- **Performance & Accessibility Focused:** Zero external UI dependencies, optimized local assets, and fully responsive layout across all screen sizes.
+
+---
 
 ## Tech Stack
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- JSON
 
-## Local Development
+- **Frontend:** HTML5, CSS3, Vanilla JavaScript (ES6+)
+- **Data & Assets:** JSON, SVG icons, Local Web Fonts
+- **Deployment:** GitHub Pages
 
-To run the project locally:
-
-1. Clone the repository:
-   git clone https://github.com/AnniMetsaniitty/annimetsaniitty.github.io.git
-
-2. Move into the project directory:
-   cd annimetsaniitty.github.io
-
-3. Start a local server (required for JSON fetching):
-   python3 -m http.server 8000
-
-4. Open in browser:
-   http://localhost:8000
+---
 
 ## Project Structure
+
 ```text
-.
-├── assets/          # Images, SVGs, and local fonts
-├── css/             # Global and projects-specific styles
-├── data/            # Static section content in JSON format
-├── js/              # Content rendering and page interaction scripts
-├── index.html       # Main page shell
-├── projects.json    # Project listing data
-└── PROJECT_STATE.md # Internal project state summary
+├── assets/          # Local fonts, icons, and media
+├── css/             # Modular stylesheets (layout, themes, components)
+├── data/            # JSON data sources for site sections
+├── js/              # DOM rendering, filtering logic, and event handlers
+├── index.html       # Single-page application shell
+└── projects.json    # Project metadata & showcase repository
 ```
-
-## Future Improvements
-- Add browser-based or automated testing for the static site
-- Improve non-JavaScript fallbacks for content rendering
-- Further streamline content organization for static data
-
-## Author
-Anni Metsäniitty

@@ -19,6 +19,13 @@
       "href": "https://github.com/AnniMetsaniitty",
       "className": "contact-link",
       "external": true
+    },
+    {
+      "label": "LinkedIn",
+      "value": "linkedin.com/in/anni-metsäniitty-650985339",
+      "href": "https://www.linkedin.com/in/anni-metsäniitty-650985339",
+      "className": "contact-link",
+      "external": true
     }
   ],
   "actions": [
@@ -30,6 +37,12 @@
     {
       "label": "View GitHub",
       "href": "https://github.com/AnniMetsaniitty",
+      "className": "btn",
+      "external": true
+    },
+    {
+      "label": "View LinkedIn",
+      "href": "https://www.linkedin.com/in/anni-metsäniitty-650985339",
       "className": "btn",
       "external": true
     }

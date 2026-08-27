@@ -31,5 +31,16 @@
 "tags": ["Python", "JSON"],
 "year": 2025,
 "featured": true
+},
+{
+"title": "MiniERP Storage Concept",
+"summary": "A cross-system integration demo showcasing a C#/.NET Minimal API backend and a Node.js client simulating external bookings.",
+"cover": "assets/images/projects/minierp-storage-concept.png",
+"links": {
+"source": "https://github.com/AnniMetsaniitty/MiniERP-Storage-Concept"
+},
+"tags": ["C#", ".NET", "SQLite", "Node.js", "REST API"],
+"year": 2026,
+"featured": true
 }
 ]
